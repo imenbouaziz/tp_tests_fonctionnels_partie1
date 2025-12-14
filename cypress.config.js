@@ -17,7 +17,6 @@ module.exports = defineConfig({
       );
       preprocessor.addCucumberPreprocessorPlugin(on, config);
 
-      // ✅ Add this line to fix the missing step issue
       config.env.stepDefinitions = "cypress/e2e/**/*.steps.js";
 
       return config;
